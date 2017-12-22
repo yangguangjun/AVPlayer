@@ -13,6 +13,10 @@
 		FEBD0A4C1FECCA3700D70E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBD0A4B1FECCA3700D70E62 /* Assets.xcassets */; };
 		FEBD0A4F1FECCA3700D70E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBD0A4D1FECCA3700D70E62 /* LaunchScreen.storyboard */; };
 		FEBD0A521FECCA3700D70E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBD0A511FECCA3700D70E62 /* main.m */; };
+		FEBD0A5E1FECCA5900D70E62 /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBD0A591FECCA5800D70E62 /* FullViewController.m */; };
+		FEBD0A5F1FECCA5900D70E62 /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBD0A5A1FECCA5800D70E62 /* PlayView.m */; };
+		FEBD0A601FECCA5900D70E62 /* PlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBD0A5B1FECCA5900D70E62 /* PlayView.xib */; };
+		FEBD0A621FECCB1300D70E62 /* 环保小视频.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FEBD0A611FECCB1300D70E62 /* 环保小视频.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		FEBD0A4E1FECCA3700D70E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEBD0A501FECCA3700D70E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEBD0A511FECCA3700D70E62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEBD0A591FECCA5800D70E62 /* FullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
+		FEBD0A5A1FECCA5800D70E62 /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
+		FEBD0A5B1FECCA5900D70E62 /* PlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayView.xib; sourceTree = "<group>"; };
+		FEBD0A5C1FECCA5900D70E62 /* PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
+		FEBD0A5D1FECCA5900D70E62 /* FullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		FEBD0A611FECCB1300D70E62 /* 环保小视频.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环保小视频.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		FEBD0A411FECCA3700D70E62 /* AVPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FEBD0A611FECCB1300D70E62 /* 环保小视频.mp4 */,
+				FEBD0A581FECCA3F00D70E62 /* AVPlayer */,
 				FEBD0A421FECCA3700D70E62 /* AppDelegate.h */,
 				FEBD0A431FECCA3700D70E62 /* AppDelegate.m */,
 				FEBD0A451FECCA3700D70E62 /* ViewController.h */,
@@ -69,6 +81,18 @@
 				FEBD0A511FECCA3700D70E62 /* main.m */,
 			);
 			path = AVPlayerDemo;
+			sourceTree = "<group>";
+		};
+		FEBD0A581FECCA3F00D70E62 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD0A5D1FECCA5900D70E62 /* FullViewController.h */,
+				FEBD0A591FECCA5800D70E62 /* FullViewController.m */,
+				FEBD0A5C1FECCA5900D70E62 /* PlayView.h */,
+				FEBD0A5A1FECCA5800D70E62 /* PlayView.m */,
+				FEBD0A5B1FECCA5900D70E62 /* PlayView.xib */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +155,8 @@
 			files = (
 				FEBD0A4F1FECCA3700D70E62 /* LaunchScreen.storyboard in Resources */,
 				FEBD0A4C1FECCA3700D70E62 /* Assets.xcassets in Resources */,
+				FEBD0A601FECCA5900D70E62 /* PlayView.xib in Resources */,
+				FEBD0A621FECCB1300D70E62 /* 环保小视频.mp4 in Resources */,
 				FEBD0A4A1FECCA3700D70E62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBD0A471FECCA3700D70E62 /* ViewController.m in Sources */,
+				FEBD0A5E1FECCA5900D70E62 /* FullViewController.m in Sources */,
 				FEBD0A521FECCA3700D70E62 /* main.m in Sources */,
 				FEBD0A441FECCA3700D70E62 /* AppDelegate.m in Sources */,
+				FEBD0A5F1FECCA5900D70E62 /* PlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

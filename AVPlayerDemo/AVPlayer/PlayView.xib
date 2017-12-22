@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-2F-a3u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                </imageView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="q7q-Nz-WMX">
+                    <rect key="frame" x="66" y="290" width="145" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="3qE-M0-Awc"/>
+                        <constraint firstAttribute="width" constant="141" id="ZEv-Zs-l1N"/>
+                    </constraints>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPv-q3-4T5">
+                    <rect key="frame" x="0.0" y="279" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="OoC-QO-3UB"/>
+                        <constraint firstAttribute="height" constant="21" id="eo7-1e-Uc8"/>
+                    </constraints>
+                    <state key="normal" title="开始/暂停"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUP-30-l9H">
+                    <rect key="frame" x="313" y="279" width="62" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="Mk0-k3-2fl"/>
+                        <constraint firstAttribute="height" constant="21" id="pYy-Yj-Fb1"/>
+                    </constraints>
+                    <state key="normal" title="全屏"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDU-la-8JG">
+                    <rect key="frame" x="209" y="285" width="98" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="5VC-RP-A0y"/>
+                        <constraint firstAttribute="width" constant="98" id="VgA-KW-JsX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bUP-30-l9H" secondAttribute="bottom" id="5Nf-RU-9gx"/>
+                <constraint firstAttribute="trailing" secondItem="A9C-2F-a3u" secondAttribute="trailing" id="9bU-7F-thg"/>
+                <constraint firstAttribute="bottom" secondItem="TPv-q3-4T5" secondAttribute="bottom" id="AfP-tW-wF5"/>
+                <constraint firstAttribute="trailing" secondItem="bUP-30-l9H" secondAttribute="trailing" id="FJW-87-n16"/>
+                <constraint firstAttribute="bottom" secondItem="iDU-la-8JG" secondAttribute="bottom" id="Ju0-88-CcW"/>
+                <constraint firstItem="iDU-la-8JG" firstAttribute="leading" secondItem="q7q-Nz-WMX" secondAttribute="trailing" id="Lio-7k-21h"/>
+                <constraint firstAttribute="bottom" secondItem="A9C-2F-a3u" secondAttribute="bottom" id="Myt-kF-jwx"/>
+                <constraint firstItem="q7q-Nz-WMX" firstAttribute="leading" secondItem="TPv-q3-4T5" secondAttribute="trailing" id="Tf1-n6-h4f"/>
+                <constraint firstAttribute="bottom" secondItem="q7q-Nz-WMX" secondAttribute="bottom" id="XQ5-AP-BT0"/>
+                <constraint firstItem="A9C-2F-a3u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hsy-Eb-Ehf"/>
+                <constraint firstItem="A9C-2F-a3u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="le4-u6-80X"/>
+                <constraint firstItem="TPv-q3-4T5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yvn-Nf-uyk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fullButton" destination="bUP-30-l9H" id="esZ-Dv-G23"/>
+                <outlet property="imageView" destination="A9C-2F-a3u" id="u0g-gb-oew"/>
+                <outlet property="onOrOffButton" destination="TPv-q3-4T5" id="qBq-N9-8Oy"/>
+                <outlet property="progressSlider" destination="q7q-Nz-WMX" id="vNf-qd-TwA"/>
+                <outlet property="timeLabel" destination="iDU-la-8JG" id="HH5-iT-Rdj"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="-139"/>
+        </view>
+    </objects>
+</document>
